@@ -4,6 +4,9 @@
 // 1. Write the code that would make this test pass.
 
 describe("multTwo", () => {
+    function multTwo(array){
+      return array.map((v) => v *2)
+    }
     test("returns an array with all the numbers multiplied by two", () => {
         expect(multTwo([3, 4, 5])).toEqual([6, 8, 10])
         expect(multTwo([23, -9, 0])).toEqual([46, -18, 0])
@@ -13,6 +16,11 @@ describe("multTwo", () => {
 
 
 // 2. Write the code that would make this test pass.
+
+const greeter = (person) => {
+  return 'hello,${person}!'
+}
+
 
 describe("greeter", () => {
   let person1 = "Snap"
